@@ -3,7 +3,7 @@ services:
   - type: web
     name: formula-validator-api
     runtime: docker
-    dockerfilePath: backend/Dockerfile
+    rootDir: backend
     envVars:
       - key: ASPNETCORE_ENVIRONMENT
         value: Production
