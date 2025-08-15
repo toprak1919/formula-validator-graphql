@@ -2682,7 +2682,7 @@
         // Load test cases from centralized JSON file
         async function loadTestCases() {
             try {
-                const response = await fetch('../test-cases.json');
+                const response = await fetch('./test-cases.json');
                 const data = await response.json();
                 comparisonTestCases = data.testCases;
                 centralizedTestData = data.testData;
