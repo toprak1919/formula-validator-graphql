@@ -17,11 +17,11 @@ FROM mcr.microsoft.com/dotnet/aspnet:8.0
 WORKDIR /app
 COPY --from=build /app/publish .
 
-# Expose port (Render will override this)
-EXPOSE 80
+# Koyeb uses PORT environment variable (default 8000)
+EXPOSE 8000
 
-# Set environment variable for ASP.NET Core
-ENV ASPNETCORE_URLS=http://+:80
+# Set environment variable for ASP.NET Core to use PORT from environment
+ENV ASPNETCORE_URLS=http://+:${PORT:-8000}
 
 # Run the application
 ENTRYPOINT ["dotnet", "FormulaValidatorAPI.dll"]

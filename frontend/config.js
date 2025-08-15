@@ -3,9 +3,9 @@ const API_CONFIG = {
     // For local development
     LOCAL_URL: 'http://localhost:5232/graphql',
     
-    // For production (update this after deploying to Render)
-    // Replace 'your-api-name' with your actual Render service name
-    PRODUCTION_URL: 'https://your-api-name.onrender.com/graphql',
+    // For production (update this after deploying to Koyeb)
+    // Replace 'your-username' with your actual Koyeb username
+    PRODUCTION_URL: 'https://formula-validator-api-your-username.koyeb.app/graphql',
     
     // Automatically use production URL if not on localhost
     get URL() {
