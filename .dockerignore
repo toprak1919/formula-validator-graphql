@@ -1,0 +1,35 @@
+# Git
+.git
+.gitignore
+
+# Documentation
+*.md
+README*
+LICENSE
+
+# Frontend (we're only deploying backend via Docker)
+frontend/
+
+# Test output
+**/TestResults/
+**/*.trx
+
+# Build results
+**/bin/
+**/obj/
+**/.vs/
+
+# User-specific files
+**/*.user
+**/*.suo
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+
+# Render config (not needed for Koyeb)
+render.yaml
